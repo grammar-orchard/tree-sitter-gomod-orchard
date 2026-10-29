@@ -1,0 +1,24 @@
+======================
+Example from the specs
+======================
+
+godebug default=go1.21
+godebug (
+    panicnil=1
+    asynctimerchan=0
+)
+
+----------------------
+
+(source_file
+  (godebug_directive_single
+    (godebug_spec
+      (godebug_str)
+      (godebug_str)))
+  (godebug_directive_multi
+    (godebug_spec
+      (godebug_str)
+      (godebug_str))
+    (godebug_spec
+      (godebug_str)
+      (godebug_str))))

@@ -1,0 +1,25 @@
+==================
+Ignore directive
+==================
+
+ignore ./node_modules
+
+ignore (
+    static
+    content/html
+    ./third_party/javascript
+)
+
+---
+
+(source_file
+  (ignore_directive_single
+    (ignore_spec
+      (file_path)))
+  (ignore_directive_multi
+    (ignore_spec
+      (file_path))
+    (ignore_spec
+      (file_path))
+    (ignore_spec
+      (file_path))))

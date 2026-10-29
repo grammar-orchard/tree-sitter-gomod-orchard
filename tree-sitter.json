@@ -1,0 +1,41 @@
+{
+  "$schema": "https://tree-sitter.github.io/tree-sitter/assets/schemas/config.schema.json",
+  "grammars": [
+    {
+      "name": "gomod_orchard",
+      "camelcase": "GoModOrchard",
+      "title": "go.mod",
+      "scope": "source.gomod",
+      "file-types": [
+        "go.mod"
+      ],
+      "injection-regex": "^gomod_orchard$",
+      "class-name": "TreeSitterGomodOrchard"
+    }
+  ],
+  "metadata": {
+    "version": "0.5.8",
+    "license": "MIT",
+    "description": "Parser for Go module manifest files",
+    "authors": [
+      {
+        "name": "Camden Cheek",
+        "email": "camden@ccheek.com"
+      }
+    ],
+    "links": {
+      "repository": "https://codeberg.org/grammar-orchard/tree-sitter-gomod-orchard",
+      "upstream": "https://github.com/camdencheek/tree-sitter-go-mod",
+      "github_mirror": "https://github.com/grammar-orchard/tree-sitter-gomod-orchard"
+    }
+  },
+  "bindings": {
+    "c": true,
+    "go": true,
+    "node": true,
+    "python": true,
+    "rust": true,
+    "swift": true,
+    "zig": false
+  }
+}
